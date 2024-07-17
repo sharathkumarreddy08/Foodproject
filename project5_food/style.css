@@ -1,0 +1,428 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+.button{
+    border: none;
+    padding: 0.5rem;
+    margin: 1rem;
+    background-color: blue;
+    color: white;
+    text-transform: uppercase;
+    font-size: larger;
+    width: 40%;
+    border-radius: 20px;
+    font-weight: bold;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    font-size:large;
+   
+}
+header h2 span{
+    color:#0099ff;
+}
+header .sub-header{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+
+}
+.sub-header img{
+    height: 1rem;
+}
+a{
+    text-decoration:none;
+    color: black;
+}
+header .sub-header ul{
+    list-style: none;
+    display: flex;
+    justify-content:space-around;
+    width: 60%;
+    margin-top: 3vh;
+}
+.heading3{
+    font-size: 2rem;
+}
+.one .left{
+   padding: 1rem;
+}
+.one .left p{
+    margin-top: 1rem;
+}
+.one .left .item{
+    display: flex;
+    align-items: center;
+    font-size: 0.7rem;
+    margin: 0.8rem 0;
+}
+.one .left .item img{
+   height: 5vh;
+   margin: 0.5rem;
+}
+.item p{
+    padding-left: 1rem;
+}
+.one .right{
+    position: relative;
+}
+.one .right img{
+   width: 100%;
+   height: auto;  
+}
+.background{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.one .right .background{
+    right: 0;
+}
+.two .left{
+    position: relative;
+}
+.two .left img{
+    height: auto;
+    width: 100%;
+}
+.two .left .foreground{
+    width: 100%;
+    height: 250px;
+    margin-left: 3.8rem;
+}
+.two .left .background{
+    width: 100%;
+    left: 0;
+}
+.two .right{
+    padding: 2rem;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.two p{
+    font-size: 1.6rem;
+    line-height: 4.9vh;
+}
+.two .right h5{
+    font-size: 1.9rem;
+    margin-bottom: 0.7rem;
+}
+.two .right h3{
+    color: #666666;
+    line-height: 5.3vh;
+    margin-bottom: 0.5rem;
+}
+.three{
+    padding: 2rem;
+    text-align: center;
+}
+.three .details .detail img{
+    height: auto;
+    width: 20%;
+    margin: auto;
+}
+.three .details .detail{
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.three .details .detail p{
+    font-size: 1.1rem;
+}
+.four{
+    padding: 2rem;
+    text-align: center;
+}
+.four .foods .food:hover{
+    background: #0067ac;
+    color: white;
+}
+.four .foods .food img{
+width: 50%;
+height:auto;
+}
+.four .foods .food{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+    border: 1px solid #666666;
+    border-radius: 16px;
+    padding: 0.8rem;
+}
+.four .foods .food span{
+    color: tomato;
+}
+.four .foods .food .button{
+    width: 50%;
+}
+.four .foods .food .button:hover{
+    background: white;
+    color: black;
+    outline: none;
+}
+.four .foods .food .price{
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+}
+/* footer section*/
+footer .special-offer{
+    padding: 2rem;
+    text-align: center;
+}
+.special-offer p{
+   font-size: 0.9rem;
+}
+.special-offer input{
+    margin-top: 2rem;
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 20px;
+    width: 80%;
+}
+ .lists{
+    padding-top: 2rem;
+    background:linear-gradient(to bottom,#64b5f6,#2196f3);
+    text-align: center;
+}
+.lists p{
+    padding-top: 1rem;
+}
+.lists .list ul{
+    list-style: none;
+    padding: 0.5rem;
+}
+.lists .list h4{
+    color: white;
+}
+.lists .boxes{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.lists .list{
+    margin:2vh 0;
+    
+}
+.lists .list img{
+    height: 4vh;
+}
+
+/*tab session   */
+@media screen and (min-width:700px){
+    header h2{
+     font-size: 2.5rem;
+    }
+    header .sub-header{
+        display: flex;
+        flex-direction: row;
+        margin:1rem;
+        font-size: 1.6rem;
+    }
+    .sub-header span{
+        margin-top: 1.7rem;
+    }
+    .one .left h3{
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+    .one .left p{
+        font-size: 1.7rem;
+    }
+    .one .left .button{
+        width: 200px;
+    }
+    .items{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: 1rem;
+    }
+    .one .right img{
+        width: 90%;
+        height: 500px;
+        
+    }
+    .two .left .foreground{
+        max-width: 60%;
+        margin-left: 10%;
+    }
+    .two .left .background{
+        width: 70%;
+    }
+    .two{
+    margin: 2rem;
+    }
+    .two .right h3{
+        line-height: 7vh;
+    }
+    .two .right p{
+        line-height: 6vh;
+    }
+    .three{
+        height: 90vh;
+        background: url(./Assests/third\ section\ background.png);
+        background-size:cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+    }
+    .three .details{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin: 2vh 0;
+        
+    }
+    .four .foods{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }
+    .four .foods .food{
+        line-height: 5vh;
+    }
+    .four .foods .button2{
+        width: 60%;
+        justify-content: center;
+    }
+    footer .lists .boxes{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    
+   
+}
+
+/*laptop session */
+@media screen and (min-width:1200px){
+    header{
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        height: 15vh;
+        align-items: center;
+        margin-left: 2rem;
+        font-size: 10rem;
+    
+    }
+       header h2{
+        margin-top: 1.8rem;
+       }
+    
+      .one{
+        display: grid;
+        grid-template-columns: 40% auto;
+        height: 90vh;
+        width: auto;
+        position: relative;
+       }
+       .one .left .button{
+        padding: 1.5rem;
+        margin-bottom: 3rem;
+       }
+    .one .right .background{
+       position: absolute;
+        top: -10%;
+        height: 66vh;
+        width: 100%;
+      }
+       .one .right .foreground{
+        height: 66vh;
+        margin-left: 8rem;
+       }
+       .one .left .items{
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 65%;
+       }
+       .two{
+        display: grid;
+        grid-template-columns: 40% auto;
+        width: auto;
+        align-items: center;
+        height: 100vh;
+       }
+       .three{
+        height: 100vh;
+        background-size:cover; 
+       }
+       .three .details{
+        width: 75%;
+        margin:3vh auto;
+       }
+       .four{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100vh;
+       }
+       .four .button2{
+        width: 50%;
+        align-self: center;
+       }
+       .four .foods{
+         display: grid;
+         grid-template-columns: repeat(4,1fr);
+         align-items: center;
+         width: 100%;
+       }
+       .four .foods .food .button{
+        width: 100%;
+        padding: 1;
+       }
+       footer{
+        position: relative;
+        display: grid;
+        margin-top: 45vh;
+       }
+       footer .special-offer {
+        width: 65%;
+        border: 1px solid #666666;
+        border-radius: 50px;
+        position: absolute;
+        top: -35%;
+        justify-self:center;
+        background-image: url(./Assests/third\ section\ background.png);
+        background-size: cover;
+       }
+       footer .input{
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        align-items: center;
+        margin: auto;
+       }
+       .input input{
+        border-style: none;
+        font-size: 1rem;
+       }
+       .input .button{
+        margin-top: 2.5rem;
+       }
+       .lists{
+        height: 60vh;
+        display: grid;
+        grid-template-columns: 25% auto;
+        align-items: center;
+       }
+
+ }
+
+
+
